@@ -1,0 +1,73 @@
+/* Playful Button Animation */
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #FFEB3B; /* Yellow background */
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    color: #FF5722; /* Orange title */
+    margin-bottom: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 20px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #FF4081; /* Bright pink button */
+    border: none;
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #D500F9; /* Purple on hover */
+    animation: bounce 0.6s ease-in-out;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  
+  .image {
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .image:hover {
+    transform: scale(1.1);
+  }
+  
+  p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3F51B5; /* Blue text */
+    margin-top: 20px;
+  }
+  
